@@ -6,11 +6,6 @@ public class Heap extends BinaryTree {
 	private static int[] theHeap;
 	private int maxHeap;
 
-	// public Heap(int listInt) {
-	// super();
-	// this.heapSize = listInt;
-	// }
-
 	public Heap(int[] theHeap) {
 		super();
 		Heap.theHeap = theHeap;

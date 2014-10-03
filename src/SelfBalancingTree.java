@@ -4,6 +4,11 @@ public abstract class SelfBalancingTree extends BinaryTree {
 	private BinaryTreeVertex leftChild;
 	private BinaryTreeVertex rightChild;
 
+	public SelfBalancingTree() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
 	// public Vertex getLocalRoot() {
 	// return localRoot;
 	// }
