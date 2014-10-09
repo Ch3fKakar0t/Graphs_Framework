@@ -1,4 +1,5 @@
 public class RedBlackTreeVertex extends BinaryTreeVertex {
+	
 	public RedBlackTreeVertex(int vertexVal) {
 		super(vertexVal);
 
