@@ -113,39 +113,39 @@ public class Heap extends BinaryTree {
 	//
 	// }
 
-	public static void main(String[] args) {
-
-		/*
-		 * This was my test heap to check if everything was working properly
-		 */
-		// int[] testHeap = { 5, 13, 2, 25, 7, 17, 20, 8, 4 };
-		// heapSort(testHeap);
-		// for (int i = 0; i < testHeap.length; i++) {
-		// System.out.println(testHeap[i] + "");
-		// }
-
-		/*
-		 * This part of the main method will allow you to choose the number of
-		 * elements and input your own integers into the tree.
-		 */
-		Scanner scan = new Scanner(System.in);
-		System.out.println("HeapSort Test\n");
-		int n, i;
-
-		System.out.println("Enter number of elements:");
-		n = scan.nextInt();
-
-		int testHeap[] = new int[n];
-
-		System.out.println("\nEnter your " + n + " elements:");
-		for (i = 0; i < n; i++)
-			testHeap[i] = scan.nextInt();
-
-		heapSort(testHeap);
-
-		System.out.println("\nElements after HeapSort: ");
-		for (i = 0; i < n; i++)
-			System.out.print(testHeap[i] + " ");
-		System.out.println();
-	}
+//	public static void main(String[] args) {
+//
+//		/*
+//		 * This was my test heap to check if everything was working properly
+//		 */
+//		// int[] testHeap = { 5, 13, 2, 25, 7, 17, 20, 8, 4 };
+//		// heapSort(testHeap);
+//		// for (int i = 0; i < testHeap.length; i++) {
+//		// System.out.println(testHeap[i] + "");
+//		// }
+//
+//		/*
+//		 * This part of the main method will allow you to choose the number of
+//		 * elements and input your own integers into the tree.
+//		 */
+//		Scanner scan = new Scanner(System.in);
+//		System.out.println("HeapSort Test\n");
+//		int n, i;
+//
+//		System.out.println("Enter number of elements:");
+//		n = scan.nextInt();
+//
+//		int testHeap[] = new int[n];
+//
+//		System.out.println("\nEnter your " + n + " elements:");
+//		for (i = 0; i < n; i++)
+//			testHeap[i] = scan.nextInt();
+//
+//		heapSort(testHeap);
+//
+//		System.out.println("\nElements after HeapSort: ");
+//		for (i = 0; i < n; i++)
+//			System.out.print(testHeap[i] + " ");
+//		System.out.println();
+//	}
 }

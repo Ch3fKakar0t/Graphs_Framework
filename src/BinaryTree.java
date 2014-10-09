@@ -98,44 +98,38 @@ public class BinaryTree extends Graph {
 			vertexY = treeMinimum(z.getRightChild());
 			if (vertexY.getParent() != z) {
 				treeTransplant(vertexY, vertexY.getRightChild());
-//				vertexY = vertexY.getRightChild();
-//				z = z.getRightChild();
-//				vertexY = z;
+				// vertexY = vertexY.getRightChild();
+				// z = z.getRightChild();
+				// vertexY = z;
 				vertexY.setLeftChild(z.getLeftChild());
 				vertexY = vertexY.getRightChild().getParent();
 			}
 			treeTransplant(z, vertexY);
-//			vertexY = vertexY.getLeftChild();
-//			z = z.getLeftChild();
-//			vertexY = z;
+			// vertexY = vertexY.getLeftChild();
+			// z = z.getLeftChild();
+			// vertexY = z;
 			vertexY.setLeftChild(z.getLeftChild());
 			vertexY = vertexY.getLeftChild().getParent();
 		}
 	}
-	
-	public void inorderTreeWalk(BinaryTreeVertex x){
-		if (x != null){
+
+	public void inorderTreeWalk(BinaryTreeVertex x) {
+		if (x != null) {
 			inorderTreeWalk(x.getLeftChild());
 			System.out.println(" " + x);
 			inorderTreeWalk(x.getRightChild());
 		}
 	}
-	
-	// tried to get it to print out the tree	
-	public void printTree(BinaryTreeVertex x){
-		if(x != null){
+
+	// tried to get it to print out the tree
+	public static void printTree(BinaryTreeVertex x) {
+		if (x != null) {
 			printTree(x.getLeftChild());
 			printTree(x.getRightChild());
-			
-			if(x.getLeftChild() == null && x.getRightChild() == null){
+
+			if (x.getLeftChild() == null && x.getRightChild() == null) {
 				System.out.println(x.getVertexVal());
 			}
 		}
 	}
-	}
-		
-	
-
-	
-
-
+}
